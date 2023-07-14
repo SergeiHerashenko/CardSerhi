@@ -1,0 +1,1120 @@
+.ContentSite{
+    width: 100%; 
+    height: 90vh;
+}
+
+.StartContent{
+    width: 100%;
+    height: 90vh;
+}
+
+.AboutMeContent{
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    width: 100%;
+    height: 100%;
+}
+
+.WorkContent{
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    width: 100%;
+    height: 100%;
+}
+
+.SkillContent{
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    width: 100%;
+    height: 100%;
+}
+
+.ConectioContent{
+    position: absolute;
+    left: 0;
+    top: 10vh;
+    width: 100%;
+    height: 100%;
+}
+
+.StartContent h2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    border-right: 2px solid #00abf0;
+    z-index: 1;
+    animation: AnimationCursor 6s linear infinite;
+}
+
+.Show  {
+    animation: ShowAnimation 1s forwards;
+}
+
+.Hide  {
+    animation: hideAnimation 0s forwards;
+}
+
+@keyframes hideAnimation {
+    0% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes ShowAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes AnimationText{
+    0%,10%,100%{
+        background-size: 0% 100%;
+    }
+    65%,85%{
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes AnimationCursor {
+    0%,10%,100%{
+        width: 0;
+        opacity: 1;
+    }
+    65%,78%,85%{
+        width: 99.9%;
+        opacity: 1;
+    }
+    75%,81%{
+        opacity: 0;
+    }
+}
+
+@keyframes AnimationTextAboutMe{
+    0%{
+        background-size: 0% 100%;
+    }
+    50%{
+        background-size: 50% 100%;
+    }
+    100%{
+        background-size: 100% 100%;
+    }
+}
+
+@keyframes AnimationCursorAboutMe {
+    0%{
+        width: 0;
+        opacity: 1;
+    }
+    50%{
+        width: 50%;
+        opacity: 1;
+    }
+    100%{
+        width: 99.9%;
+        opacity: 0;
+    }
+}
+
+.animation{
+    animation: AnimationTextAboutMe 2s linear forwards;
+}
+
+.animation::before{
+    animation: AnimationCursorAboutMe 2s linear forwards;
+}
+
+ /* Розміри для моніторів */
+ @media (min-width: 1025px) {
+    .MyPhoto{
+        width: 13vw;
+        height: 13vw;
+        background-image: url(https://drive.google.com/uc?export=view&id=13myX1rsNVdQmehyzGFxY47Vt226sLXXu);
+        background-position: center center;
+        background-size: cover;
+        border-radius: 50%;
+        margin-top: 2%;
+        margin-right: 10%;
+        margin-left: auto;
+        border: 2px solid #45f3ff;
+    }
+    
+    .StartContent h1 {
+        margin-left: 10%;
+        margin-right: auto;
+        font-size: 4vw;
+        color: #45f3ff;
+        font-family: Arial;
+        font-weight: 800; 
+    }
+    
+    .StartContent h2{
+        margin-left: 10%;
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        animation: AnimationText 6s linear infinite;
+        font-size: 3vw;
+    }
+
+    .AboutMeTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        font-size: 3vw;
+    }
+
+    .AboutMeTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+    }
+
+    .StikerContainer {
+        margin-top: 2%;
+        display: flex;
+        color: #000000;
+        font-size: 1.4vw;
+    }
+
+    .StikerContainer1 {
+        margin-top: 10%;
+        display: flex;
+        color: #000000;
+    }
+
+    .Stiker{
+        margin-left: 15%;
+        width: 24vw;
+        height: 24vw;
+        background-image: url(Ліво_новий.jpg);
+        background-size: 100% 100%;
+    }
+
+    .Stiker2{
+        margin-right: 15%;
+        margin-left: auto;
+        width: 24vw;
+        height: 24vw;
+        background-image: url(Правий_новий.jpg);
+        background-size: 100% 100%;
+    }
+
+    .Stiker3{
+        margin-left: 15%;
+        width: 24vw;
+        height: 24vw;
+        background-image: url(Правий_новий.jpg);
+        background-size: 100% 100%;
+    }
+
+    .Stiker4{
+        margin-right: 15%;
+        margin-left: auto;
+        width: 24vw;
+        height: 24vw;
+        background-image: url(Ліво_новий.jpg);
+        background-size: 100% 100%;
+    }
+
+    .PersonalInformation{
+        font-size: 1vw;
+        margin-top: 28%;
+        margin-left: 22%;
+        color: rgb(20, 16, 85);
+    }
+
+    .WorkTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        font-size: 3vw;
+    }
+
+    .WorkTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+    }
+
+    .Education{
+        margin-top: 2%;
+        display: flex;
+        color: #000000;
+        font-size: 1.4vw;
+        font-family: Arial;
+    }
+
+    .EducationStiker{
+        margin-left: 15%;
+        width: 26vw;
+        height: 26vw;
+        background-image: url(Ліво1.jpg);
+        background-size: 100% 100%;
+    }
+
+    .Study{
+        font-size: 1vw;
+        margin-top: 26%;
+        margin-left: 17%;
+        color: rgb(20, 16, 85);
+    }
+
+    .WorkStiker{
+        margin-left: 15%;
+        width: 26vw;
+        height: 26vw;
+        background-image: url(Право1.jpg);
+        background-size: 100% 100%;
+    }
+
+    .SkillTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        font-size: 3vw;
+    }
+
+    .SkillTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+    }
+
+    .Content{
+        display: flex;
+    }
+
+    .ContentSkill{
+        background-image: url(Ліво_новий.jpg);
+        background-size: 100% 100%;
+        width: 22vw;
+        height: 22vw;
+        margin-left: 23%;
+    }
+
+    .ContentSkill1{
+        background-image: url(Правий_новий.jpg);
+        background-size: 100% 100%;
+        width: 22vw;
+        height: 22vw;
+        margin-left: 10%;
+    }
+
+    .ContentSkill2{
+        background-image: url(Без\ імені1.png);
+        background-size: 100% 100%;
+        width: 32vw;
+        height: 30vh;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .TextContent{
+        color: rgb(20, 16, 85);
+        position: relative;
+        font-size: 1vw;
+        top: 32%;
+        left: 25%;
+        width: 14vw;
+        font-family: Arial;
+    }
+
+    .TextContent2{
+        color: rgb(20, 16, 85);
+        position: relative;
+        font-size: 1vw;
+        top: 32%;
+        left: 25%;
+        width: 21vw;
+        font-family: Arial;
+    }
+
+    .ConectionTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        font-size: 3vw;
+    }
+
+    .ConectionTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+    }
+
+    .StikerConection{
+        background-image: url(8.png);
+        background-size: 100% 100%;
+        width: 32vw;
+        height: 32vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .TextConection{
+        font-family: Arial;
+        color: rgb(20, 16, 85);
+        position: relative;
+        font-size: 1vw;
+        top: 30%;
+        left: 18%;
+        width: 20vw;
+    }
+ }
+
+/* Розміри для планшету */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .MyPhoto{
+        width: 30vw;
+        height: 30vw;
+        background-image: url(https://drive.google.com/uc?export=view&id=13myX1rsNVdQmehyzGFxY47Vt226sLXXu);
+        background-position: center center;
+        background-size: cover;
+        border-radius: 50%;
+        margin-top: 2%;
+        margin-right: 50%;
+        transform: translateX(50%);
+        margin-left: auto;
+        border: 2px solid #45f3ff;
+    }
+
+    .StartContent h1 {
+        margin-top: 10%;
+        width: 100%;
+        text-align: center;
+        margin-right: auto;
+        font-size: 4vw;
+        color: #45f3ff;
+        font-family: Arial;
+        font-weight: 800; 
+    }
+    
+    .StartContent h2{
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        animation: AnimationText 6s linear infinite;
+        font-size: 3vw;
+    }
+
+    .AboutMeTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        
+        font-size: 3vw;
+    }
+
+    .AboutMeTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+    }
+
+    .StikerContainer {
+        margin-top: 2%;
+        display: flex;
+        color: #000000;
+        font-size: 1.4vw;
+    }
+
+    .StikerContainer1 {
+        margin-top: 10%;
+        display: flex;
+        color: #000000;
+    }
+
+    .Stiker{
+        margin-left: 15%;
+        width: 24vw;
+        height: 24vw;
+        background-image: url(Ліво_новий.jpg);
+        background-size: 100% 100%;
+    }
+
+    .Stiker2{
+        margin-right: 15%;
+        margin-left: auto;
+        width: 24vw;
+        height: 24vw;
+        background-image: url(Правий_новий.jpg);
+        background-size: 100% 100%;
+    }
+    
+    .Stiker3{
+        margin-left: 15%;
+        width: 24vw;
+        height: 24vw;
+        background-image: url(Правий_новий.jpg);
+        background-size: 100% 100%;
+    }
+
+    .Stiker4{
+        margin-right: 15%;
+        margin-left: auto;
+        width: 24vw;
+        height: 24vw;
+        background-image: url(Ліво_новий.jpg);
+        background-size: 100% 100%;
+    }
+
+    .PersonalInformation{
+        font-size: 1vw;
+        margin-top: 28%;
+        margin-left: 22%;
+        color: rgb(20, 16, 85);
+    }
+
+    .WorkTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        font-size: 3vw;
+    }
+
+    .WorkTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+    }
+
+    .Education{
+        margin-top: 2%;
+        display: flex;
+        color: #000000;
+        font-size: 1.4vw;
+        font-family: Arial;
+    }
+
+    .EducationStiker{
+        margin-left: 15%;
+        width: 26vw;
+        height: 26vw;
+        background-image: url(Ліво1.jpg);
+        background-size: 100% 100%;
+    }
+
+    .Study{
+        font-size: 1vw;
+        margin-top: 26%;
+        margin-left: 17%;
+        color: rgb(20, 16, 85);
+    }
+
+    .WorkStiker{
+        margin-left: 15%;
+        width: 26vw;
+        height: 26vw;
+        background-image: url(Право1.jpg);
+        background-size: 100% 100%;
+    }
+
+    .SkillTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        font-size: 3vw;
+    }
+
+    .SkillTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+    }
+
+    .Content{
+        display: flex;
+    }
+
+    .ContentSkill{
+        background-image: url(Ліво_новий.jpg);
+        background-size: 100% 100%;
+        width: 30vw;
+        height: 30vw;
+        margin-left: 15%;
+    }
+
+    .ContentSkill1{
+        background-image: url(Правий_новий.jpg);
+        background-size: 100% 100%;
+        width: 30vw;
+        height: 30vw;
+        margin-left: 10%;
+    }
+
+    .ContentSkill2{
+        background-image: url(Без\ імені1.png);
+        background-size: 100% 100%;
+        width: 32vw;
+        height: 30vh;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .TextContent{
+        color: rgb(20, 16, 85);
+        position: relative;
+        font-size: 1.4vw;
+        top: 32%;
+        left: 25%;
+        width: 18vw;
+        font-family: Arial;
+    }
+
+    .TextContent2{
+        color: rgb(20, 16, 85);
+        position: relative;
+        font-size: 1.4vw;
+        top: 32%;
+        left: 25%;
+        width: 21vw;
+        font-family: Arial;
+    }
+
+    .ConectionTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        font-size: 3vw;
+    }
+
+    .ConectionTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+    }
+
+    .StikerConection{
+        background-image: url(8.png);
+        background-size: 100% 100%;
+        width: 35vw;
+        height: 35vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .TextConection{
+        color: rgb(20, 16, 85);
+        position: relative;
+        font-size: 1.2vw;
+        top: 30%;
+        left: 18%;
+        width: 22vw;
+        text-indent: 1.5vw;
+    }
+}
+
+/* Розміри для телефону */
+@media screen and (max-width: 768px) {
+    
+    .MyPhoto{
+        width: 30vw;
+        height: 30vw;
+        background-image: url(https://drive.google.com/uc?export=view&id=13myX1rsNVdQmehyzGFxY47Vt226sLXXu);
+        background-position: center center;
+        background-size: cover;
+        border-radius: 50%;
+        margin-top: 2%;
+        margin-right: 50%;
+        transform: translateX(50%);
+        margin-left: auto;
+        border: 2px solid #45f3ff;
+    }
+
+    .StartContent h1 {
+        margin-top: 10%;
+        width: 100%;
+        text-align: center;
+        margin-right: auto;
+        font-size: 4vw;
+        color: #45f3ff;
+        font-family: Arial;
+        font-weight: 800; 
+    }
+    
+    .StartContent h2{
+        left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        animation: AnimationText 6s linear infinite;
+        font-size: 3vw;
+    }
+
+    .AboutMeTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        font-size: 6vw;
+    }
+
+    .AboutMeTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+    }
+
+    .StikerContainer {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-top: 2%;
+        display: inline-block;
+        color: #000000;
+        font-size: 1.4vw;
+    }
+
+    .StikerContainer1 {
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: inline-block;
+        margin-top: 10%;
+        color: #000000;
+    }
+
+    .Stiker{
+        width: 50vw;
+        height: 50vw;
+        background-image: url(Ліво_новий.jpg);
+        background-size: 100% 100%;
+    }
+    
+    .Stiker2{
+        width: 50vw;
+        height: 50vw;
+        background-image: url(Правий_новий.jpg);
+        background-size: 100% 100%;
+    }
+
+    .Stiker3{
+        width: 50vw;
+        height: 50vw;
+        background-image: url(Правий_новий.jpg);
+        background-size: 100% 100%;
+    }
+
+    .Stiker4{
+        width: 50vw;
+        height: 50vw;
+        background-image: url(Ліво_новий.jpg);
+        background-size: 100% 100%;
+    }
+
+    .PersonalInformation{
+        position: absolute;
+        left: 22%;
+        top: 11%;
+        font-size: 2.5vw;
+        color: rgb(20, 16, 85);
+    }
+
+    .PersonalInformation1{
+        position: absolute;
+        left: 22%;
+        top: 60%;
+        font-size: 2.5vw;
+        color: rgb(20, 16, 85);
+    }
+
+    .PersonalInformation2{
+        position: absolute;
+        left: 22%;
+        top: 10%;
+        font-size: 2.2vw;
+        color: rgb(20, 16, 85);
+    }
+
+    .PersonalInformation3{
+        position: absolute;
+        left: 20%;
+        top: 62%;
+        font-size: 2.3vw;
+        color: rgb(20, 16, 85);
+    }
+
+    .WorkTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        font-size: 3vw;
+    }
+
+    .WorkTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+        
+    }
+
+    .Education{
+        margin-left: 50%;
+        transform: translateX(-50%);
+        display: block;
+        color: #000000;
+        font-size: 1.4vw;
+        font-family: Arial;
+    }
+
+    .EducationStiker{
+        width: 50vw;
+        height: 50vw;
+        background-image: url(Ліво1.jpg);
+        background-size: 100% 100%;
+    }
+
+    .Study{
+        position: absolute;
+        left: 12%;
+        top: 11%;
+        font-size: 2vw;
+        color: rgb(20, 16, 85);
+    }
+
+    .Study1{
+        position: absolute;
+        left: 9%;
+        top: 63%;
+        font-size: 2vw;
+        color: rgb(20, 16, 85);
+    }
+
+    .WorkStiker{
+        width: 50vw;
+        height: 50vw;
+        background-image: url(Право1.jpg);
+        background-size: 100% 100%;
+    }
+
+    .SkillTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        font-size: 6vw;
+    }
+
+    .SkillTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+    }
+
+    .Content{
+        display: block;
+    }
+
+    .ContentSkill{
+        background-image: url(Ліво_новий.jpg);
+        background-size: 100% 100%;
+        width: 50vw;
+        height: 50vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ContentSkill1{
+        background-image: url(Правий_новий.jpg);
+        background-size: 100% 100%;
+        width: 50vw;
+        height: 50vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .ContentSkill2{
+        background-image: url(Без\ імені1.png);
+        background-size: 100% 100%;
+        width: 60vw;
+        height: 26vh;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .TextContent{
+        color: rgb(20, 16, 85);
+        position: relative;
+        font-size: 2vw;
+        top: 32%;
+        left: 25%;
+        width: 25vw;
+        font-family: Arial;
+    }
+
+    .TextContent2{
+        color: rgb(20, 16, 85);
+        position: relative;
+        font-size: 2vw;
+        top: 32%;
+        left: 25%;
+        width: 30vw;
+        font-family: Arial;
+    }
+
+    .ConectionTitle{
+        margin-top: 5%;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        overflow: hidden;
+        position: relative;
+        display: inline-block;
+        font-size: 3.2rem;
+        font-weight: 800;
+        font-family: Arial;
+        color: transparent;
+        -webkit-text-stroke: .2px black;
+        background-image: url(https://drive.google.com/uc?export=view&id=1CsLAaOgRJidXfNSQlgWQ6_DS3bjoSrXs);
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        background-size: 0% 100%;
+        font-size: 6vw;
+    }
+
+    .ConectionTitle::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        border-right: 2px solid #00abf0;
+        z-index: 1;
+    }
+
+    .StikerConection{
+        background-image: url(8.png);
+        background-size: 100% 100%;
+        width: 66vw;
+        height: 66vw;
+        margin-left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .TextConection{
+        color: rgb(20, 16, 85);
+        position: relative;
+        font-size: 2.3vw;
+        top: 30%;
+        left: 18%;
+        width: 40vw;
+        text-indent: 1.5vw;
+    }
+}

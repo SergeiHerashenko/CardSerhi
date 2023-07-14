@@ -1,0 +1,22 @@
+/* Стиль фона сайту /Site background style/ */
+.BackgroundImage {
+    background-color: rgb(1, 2, 59);
+    margin: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0.4vw; /* ширина полоси прокрутки */
+}
+
+::-webkit-scrollbar:hover {
+    width: 1vw; /* ширина полоси прокрутки */
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(1, 2, 59); /* колір фону полоси прокрутки */
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #45f3ff;
+    border-radius: 20px; /* колір полоси прокрутки */
+}

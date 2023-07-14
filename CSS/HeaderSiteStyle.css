@@ -1,0 +1,171 @@
+.HeaderSite{
+    width: 100%; 
+    height: 10vh;
+    position: relative;
+}
+
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.LinkButton:hover{
+    color: #5145ff;
+}
+
+ /* Розміри для моніторів */
+ @media (min-width: 1025px) {
+    .Menu{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 40vw;
+        height: 6vh;
+        border-radius: 20px;
+        background: none;
+        overflow: hidden;
+        z-index: 1;
+    
+    }
+    .Menu::before{
+        content: '';
+        position: absolute; 
+        top: -100%;
+        left: 0%;
+        width: 45vw;
+        height: 14vh;
+        background: linear-gradient(#45f3ff 100%, rgb(1, 2, 59) 50%);
+        animation: animate 6s linear infinite;
+        z-index: -1;
+    }
+    
+    .MenuSite{
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        background: rgb(1, 2, 59);
+        border-radius: 20px;
+        z-index: 333333;
+        margin: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .LinkButton{
+        color: rgb(0, 225, 255);
+        font-family: Arial;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 1vw;
+        flex-grow: 1;
+        text-align: center;
+        padding: 10px;
+    }
+ }
+
+/* Розміри для планшету */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .Menu{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80vw;
+        height: 6vh;
+        border-radius: 20px;
+        background: none;
+        overflow: hidden;
+        z-index: 1;
+    
+    }
+    .Menu::before{
+        content: '';
+        position: absolute; 
+        top: -100%;
+        left: 0%;
+        width: 90vw;
+        height: 14vh;
+        background: linear-gradient(#45f3ff 100%, rgb(1, 2, 59) 50%);
+        animation: animate 6s linear infinite;
+        z-index: -1;
+    }
+    
+    .MenuSite{
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        background: rgb(1, 2, 59);
+        border-radius: 20px;
+        z-index: 333333;
+        margin: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .LinkButton{
+        color: rgb(0, 225, 255);
+        font-family: Arial;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 2vw;
+        flex-grow: 1;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+/* Розміри для телефону */
+@media screen and (max-width: 768px) {
+    .Menu{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80vw;
+        height: 6vh;
+        border-radius: 20px;
+        background: none;
+        overflow: hidden;
+        z-index: 1;
+    
+    }
+    .Menu::before{
+        content: '';
+        position: absolute; 
+        top: -100%;
+        left: 0%;
+        width: 90vw;
+        height: 14vh;
+        background: linear-gradient(#45f3ff 100%, rgb(1, 2, 59) 50%);
+        animation: animate 6s linear infinite;
+        z-index: -1;
+    }
+    
+    .MenuSite{
+        width: calc(100% - 6px);
+        height: calc(100% - 6px);
+        background: rgb(1, 2, 59);
+        border-radius: 20px;
+        z-index: 333333;
+        margin: 3px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .LinkButton{
+        color: rgb(0, 225, 255);
+        font-family: Arial;
+        font-weight: 600;
+        cursor: pointer;
+        font-size: 2vw;
+        flex-grow: 1;
+        text-align: center;
+        padding: 10px;
+    }
+}

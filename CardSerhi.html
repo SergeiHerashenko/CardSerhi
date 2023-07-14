@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="CSS/BackgroundImageStyle.css">
+    <link rel="stylesheet" type="text/css" href="CSS/ContentSiteStyle.css">
+    <link rel="stylesheet" type="text/css" href="CSS/HeaderSiteStyle.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet' />
+</head>
+<body class="BackgroundImage">
+
+    <div class="HeaderSite">
+        <div class="Menu">
+            <div class="MenuSite">
+                <a id="HomePage" class="LinkButton" onclick="Show(this)">Головна</a>
+                <a id="AboutMePage" class="LinkButton" onclick="Show(this)">Про мене</a>
+                <a id="WorkPage" class="LinkButton" onclick="Show(this)">Досвіт та освіта</a>
+                <a id="SkillPage" class="LinkButton" onclick="Show(this)">Навички</a>
+                <a id="ConectionPage" class="LinkButton" onclick="Show(this)">Зв'язок</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="ContentSite">
+        <div class="StartContent">
+            <div class="MyPhoto"></div>
+            <h1>
+                Привіт, я Сергій Геращенко
+            </h1>
+            <h2>
+                C# .NET розробник
+            </h2>
+        </div>
+
+        <div class="AboutMeContent Hide">
+            <div class="AboutMeTitle">
+                Про мене
+            </div>
+            <div class="StikerContainer Hide">
+                <div class="Stiker">
+                    <h1 class="PersonalInformation" style="transform: rotate(-8deg);">
+                        <p style="color: blueviolet;">Особиста інформація</p>
+                        <p>Ім'я: Сергій</p>
+                        <p>Призвіще: Геращенко</p>
+                        <p>По-батькові: Васильович</p>
+                    </h1>
+                </div>
+                <div class="Stiker2">
+                    <h1 class="PersonalInformation1 PersonalInformation" style="transform: rotate(8deg);">
+                        <p style="color: blueviolet;">Вік та місце проживання</p>
+                        <p>Вік: 26 років</p>
+                        <p>Місце проживання: Київ</p>
+                    </h1>
+                </div>
+            </div>
+            <div class="StikerContainer1 Hide">
+                <div class="Stiker3">
+                    <h1 class="PersonalInformation2 PersonalInformation" style="transform: rotate(8deg);">
+                        <p style="color: blueviolet;">Особисті якості</p>
+                        <li>Логічне мислення</li>
+                        <li>Уважність та вміння 
+                            <br>
+                            фокусуватися</li>
+                        <li>Цікавість</li>
+                        <li>Відповідальність</li>
+                        <li>Вміння працювати в команді</li>
+                    </h1>
+                </div>
+                <div class="Stiker4">
+                    <h1 class="PersonalInformation3 PersonalInformation" style="transform: rotate(-8deg);">
+                        <p style="color: blueviolet;">Бажана посада</p>
+                        <p>Програміст C# .NET</p>
+                        <p>Тип зайнятості: повна зайнятість</p>
+                        <p>Характер роботи: віддалена/в офісі робота</p>
+                    </h1>
+                </div>
+            </div>
+        </div>
+
+        <div class="WorkContent Hide">
+            <div class="WorkTitle">
+                Досвіт роботи та освіта
+            </div>
+
+            <div class="Education Hide">
+                <div class="EducationStiker">
+                    <div class="Study" style="transform: rotate(-7deg);">
+                        <p style="color: blueviolet; font-weight: 800;">Освіта</p>
+                        <p>
+                            <a style="color: blueviolet;">Назва навчального закладу:</a>
+                            <br>
+                            КНУ імени Тараса Шевченка
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Факультет:</a>
+                            <br>
+                            Факультет радіофізики електроніки та компь'ютерних систем
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Місто:</a> 
+                            <br>
+                            Київ
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Рік закінчення:</a> 
+                            <br>
+                            2022 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="WorkStiker">
+                    <div class="Study Study1" style="transform: rotate(6deg);">
+                        <p style="color: blueviolet; font-weight: 800;">Досвіт роботи</p>
+                        <p>
+                            <a style="color: blueviolet;">Назва компанії:</a>
+                            Vents
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Сфера компанії:</a>
+                            IT
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Посада:</a> 
+                            Інженер-програміст .NET
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Початок роботи:</a> 
+                            Лютий 2021 року 
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Закінчення роботи:</a> 
+                            Травень 2022 року 
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Education Hide">
+                <div class="EducationStiker">
+                    <div class="Study" style="transform: rotate(-7deg);">
+                        <p style="color: blueviolet; font-weight: 800;">Досвіт роботи</p>
+                        <p>
+                            <a style="color: blueviolet;">Назва компанії:</a>
+                            Medicover Integrated 
+                            <br>Clinical Services Ukraine
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Сфера компанії:</a>
+                            Медицина та охорона здоров'я
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Посада:</a> 
+                            Молодший менеджер по клінічним дослідженням
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Початок роботи:</a> 
+                            Травень 2019 року 
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Закінчення роботи:</a> 
+                            Жовтень 2019 року 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="WorkStiker">
+                    <div class="Study Study1" style="transform: rotate(6deg);">
+                        <p style="color: blueviolet; font-weight: 800;">Досвіт роботи</p>
+                        <p>
+                            <a style="color: blueviolet;">Назва компанії:</a>
+                            Samsung R&D Institute Ukraine
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Сфера компанії:</a>
+                            Електроніка та електротехніка
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Посада:</a> 
+                            Молодший тестувальник
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Початок роботи:</a> 
+                            Квітень 2018 року 
+                        </p>
+                        <p>
+                            <a style="color: blueviolet;">Закінчення роботи:</a> 
+                            Липень 2018 року
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="SkillContent Hide">
+            <div class="SkillTitle">
+                Мої навички
+            </div>
+
+            <div class="Content Hide">
+                <div class="ContentSkill">
+                    <div class="TextContent"  style="transform: rotate(-7deg);">
+                        <li>Досвід роботи з мовою програмування C# і знання принципів ООП</li>
+                        <li>Базові знання мов програмування С/С++ і практичний досвід у вирішенні фізичних задач</li>
+                    </div>
+                </div>
+    
+                <div class="ContentSkill1">
+                    <div class="TextContent" style="transform: rotate(8deg);">
+                        <li>Робота з базами даних MySQL і PostgreSQL.</li>
+                        <li>Знання фреймворка ASP .NET MVC для веб-розробки.</li>
+                        <li>Використання AJAX і jQuery для взаємодії з сервером та покращення користувацького досвіду.</li>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Content Hide">
+                <div class="ContentSkill2">
+                    <div class="TextContent2">
+                        <li>Досвід роботи зі створенням Windows додатків за допомогою WinForms і WPF.</li>
+                        <li>Розуміння платформи .NET і її можливостей.</li>
+                        <li>Основні навички у розробці веб-сторінок з використанням HTML, CSS і JavaScript.</li>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="ConectioContent Hide">
+            <div class="ConectionTitle">
+                Зв'язок
+            </div>
+
+            <div class="StikerConection Hide">
+                <div class="TextConection">
+                    <p style="text-indent: 1.5vw;">Я з нетерпінням чекаю можливості співпрацювати з вами та реалізувати ваші проекти з високою якістю та професіоналізмом.</p>
+                    <p>Мої контакти для зв'язку:</p>
+                    <p>
+                    <a style="color: blueviolet;" href="https://t.me/Inclydi" target="_blank" class="contact-link">
+                        <i class="bx bxl-telegram"></i> @Inclydi
+                    </a>
+                    </p>
+                    <p>
+                        <a style="color: blueviolet;" href="mailto:sergeiherashenko1996@gmail.com?subject=Привіт!" target="_blank" class="contact-link">
+                        <i class="bx bx-envelope"></i> sergeiherashenko1996@gmail.com
+                    </a>
+                    </p>
+                    <p>
+                        <a style="color: blueviolet;" href="https://github.com/SergeiHerashenko" target="_blank" class="contact-link"> 
+                            <i class='bx bxl-github' ></i> Github</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="JavaScript/ShowOrHideElement.js"></script>
+</html>
